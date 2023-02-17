@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    What is the average flight speed of an unladen Swallow?
+                </h3>
+                <button id="af">African?</button>
+                <button id="eu">European?</button>
+                <button id="correct">20.1 mph</button>
+                <p></p>
+                <script>
+                        let answer1 = document.querySelector('p')
+                        document.querySelector('#af').addEventListener('click', function(){
+                            af.style.backgroundColor = 'red';
+                            answer1.innerHTML = 'Incorrect';
+                        });
+                        document.querySelector('#eu').addEventListener('click', function(){
+                            eu.style.backgroundColor = 'red';
+                            answer1.innerHTML = 'Incorrect';
+                        });
+                        document.querySelector('#correct').addEventListener('click', function(){
+                            correct.style.backgroundColor = 'green';
+                            answer1.innerHTML = 'Correct';
+                        });
+
+
+                </script>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    How many pokemon were there in the first generation of games?
+                </h3>
+                <input>
+                <button id="pokemon">Check Answer</button>
+                <h5 id="p2"></h5>
+                <script>
+                        let input = document.querySelector('input');
+                        let poke = document.querySelector('h5');
+                        document.querySelector('#pokemon').addEventListener('click', function(){
+                        if(input.value == 150){
+                            poke.innerHTML = 'Correct';
+                            input.style.backgroundColor = 'green';
+
+                        }
+                        else{
+                            poke.innerHTML = 'Incorrect';
+                            input.style.backgroundColor = 'red';
+
+                        }
+                        });
+
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
