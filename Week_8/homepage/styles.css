@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/video_games">Video Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/books">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cooking">Cooking</a>
+                </li>
+              </ul>
+        </header>
+        <main>
+
+       <h1 style= "margin-left: 200pt;">Welcome to my Homepage!</h1>
+       <h4 style= "margin-left: 200pt;">Jeremie Walls</h4>
+       <img class ="indent_img" src="images/matrix.jpg" alt="yo" width="800">
+       <h6 style="margin-left: 200pt; margin-top: 15px"><em>"Learning to code one mistake at a time."</em></h6>
+       <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;">About My Hobbies</h4>
+       <hr class="solid">
+       <p class="indent" style="padding-bottom: 30px">
+        Video games:
+        One of my favorite hobbies is playing video games. It's an immersive experience that allows me to explore new worlds, test my problem-solving skills, and compete with other players from around the globe. From epic adventure games to competitive first-person shooters, I enjoy the thrill of the challenge and the rush of adrenaline that comes with it. It's a great way to relax and unwind after a long day, and it always leaves me feeling refreshed and energized.<br><br>
+
+        Books:
+Reading is another one of my passions. Whether it's diving into a gripping thriller, getting lost in a fantastical world, or learning about a new topic, there's something magical about getting lost in a good book. It's a way to escape reality and experience different perspectives, cultures, and ideas. I love the feeling of turning the pages and discovering new characters, places, and plots. It's a form of entertainment that never gets old, and there's always something new and exciting to discover.<br><br>
+
+Cooking:
+Finally, cooking is a hobby that I've recently developed a love for. There's something incredibly satisfying about creating a delicious meal from scratch and sharing it with others. I enjoy experimenting with new recipes, learning new techniques, and exploring different cuisines. It's a way to express my creativity and nourish my body and soul. Whether I'm cooking for myself or for a group of friends, it's a fun and rewarding hobby that brings people together and creates memories that last a lifetime.
+       </p>
+    </main>
+       <footer>
+       <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Video Games</h5>
+              <p class="card-text">Escape reality, explore new worlds.</p>
+              <a href="#" class="btn btn-info" id="eu">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">Immerse in stories, broaden horizons.</p>
+              <a href="#" class="btn btn-primary" id="correct">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Cooking</h5>
+                <p class="card-text">Create, experiment, savor.</p>
+                <a href="#" class="btn btn-secondary" id="kok">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+   <script>
+        let answer1 = document.querySelector('p')
+        document.querySelector('#kok').addEventListener('click', function(){
+            kok.style.backgroundColor = 'red';
+
+        });
+        document.querySelector('#eu').addEventListener('click', function(){
+            eu.style.backgroundColor = 'cyan';
+
+        });
+        document.querySelector('#correct').addEventListener('click', function(){
+            correct.style.backgroundColor = 'green';
+
+        });
+
+
+</script>
+
+    </body>
+</html>
